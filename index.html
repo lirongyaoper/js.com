@@ -4,22 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="jquery.js"></script>
+    <script src="jquery.js">
+        $(function(){
+            $("btn").click(function(){
+                
+            })
+        })
+    </script>
 
 </head>
 <body>
-    <div>
-        <h1>hello world</h1>
-        <p>这是一个段落</p>
-        <span>这是一个span标签</span>
-        <span>这是第二个span标签</span>
-    </div>
+    <ul>
+        <li>HTML</li>
+        <li>css</li>
+        <li>JavaScript</li>
+        <li>jquery</li>
+        <li>Vue.js</li>
+    </ul>
+    <input type="button" id="btn" value = "互换" />
 
     <script>
-        $(function(){
-             $("div h1:first-child").css("color","red");
-             $("div p:first-of-type").css("color","blue");
-        });
+        
     </script>
 </body>
 </html>
